@@ -1,0 +1,34 @@
+digraph {
+	Fact [label="Fact
+(order_id,customer_id,order_status,order_purchase_timestamp,
+hs_entrega_logistica,hs_entrega_cliente,hs_entrega_estimada_cliente,...)" fillcolor=lightblue shape=box style=filled]
+	orders [label="order
+(order_id,customer_id,order_status,order_purchase_timestamp,
+hs_entrega_logistica,hs_entrega_cliente,hs_entrega_estimada_cliente)" fillcolor=lightgray shape=ellipse style=filled]
+	orders -> Fact
+	order_items [label="order_items
+(order_id,order_item_id,product_id,
+seller_id,shipping_limit_date,price,freight_value)" fillcolor=lightgray shape=ellipse style=filled]
+	order_items -> Fact
+	order_payments [label="order_payments
+(order_id,payment_value)" fillcolor=lightgray shape=ellipse style=filled]
+	order_payments -> Fact
+	order_reviews [label="order_reviews
+(order_id,hs_response,avg_review_score)" fillcolor=lightgray shape=ellipse style=filled]
+	order_reviews -> Fact
+	products [label="products
+(product_id,product_category_name)" fillcolor=lightgray shape=ellipse style=filled]
+	products -> Fact
+	customer [label="customer
+(*)" fillcolor=lightgray shape=ellipse style=filled]
+	customer -> Fact
+	seller [label="seller
+(*)" fillcolor=lightgray shape=ellipse style=filled]
+	seller -> Fact
+	geolocation_s [label="geolocation
+(seller_*)" fillcolor=lightgray shape=ellipse style=filled]
+	geolocation_s -> Fact
+	geolocation_c [label="geolocation
+(customer_*)" fillcolor=lightgray shape=ellipse style=filled]
+	geolocation_c -> Fact
+}

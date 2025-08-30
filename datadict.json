@@ -1,0 +1,73 @@
+{
+  "olist_customers_dataset.csv": {
+    "customer_id": "Clave para el conjunto de datos de pedidos. Cada pedido tiene un customer_id único.",
+    "customer_unique_id": "Identificador único de un cliente",
+    "customer_zip_code_prefix": "Primeros cinco dígitos del código postal del cliente",
+    "customer_city": "Nombre de la ciudad del cliente",
+    "customer_state": "Estado del cliente"
+  },
+  "olist_geolocation_dataset.csv": {
+    "geolocation_zip_code_prefix": "Primeros 5 dígitos del código postal",
+    "geolocation_lat": "Latitud",
+    "geolocation_lng": "Longitud",
+    "geolocation_city": "Ciudad",
+    "geolocation_state": "Estado"
+  },
+  "olist_order_items_dataset.csv": {
+    "order_id": "Identificador único del pedido",
+    "order_item_id": "Número secuencial que identifica el número de artículos incluidos en el mismo pedido.",
+    "product_id": "Identificador único del producto",
+    "seller_id": "Identificador único del vendedor",
+    "shipping_limit_date": "Muestra la fecha límite de envío del vendedor para gestionar el pedido al socio logístico.",
+    "price": "Precio del artículo",
+    "freight_value": "Valor de flete del artículo (si un pedido tiene más de un artículo, el valor del flete se divide entre los artículos)"
+  },
+  "olist_order_payments_dataset.csv": {
+    "order_id": "Identificador único del pedido",
+    "payment_sequential": "Un cliente puede pagar un pedido con más de un método de pago. Si lo hace, se creará una secuencia para acomodar todos los pagos.",
+    "payment_type": "Forma de pago elegida por el cliente.",
+    "payment_installments": "Número de cuotas elegidas por el cliente.",
+    "payment_value": "Valor de la transacción."
+  },
+  "olist_order_reviews_dataset.csv": {
+    "review_id": "Identificador de revisión único",
+    "order_id": "Identificador único del pedido",
+    "review_score": "Nota que va del 1 al 5 otorgada por el cliente en una encuesta de satisfacción.",
+    "review_comment_title": "Título del comentario de la reseña dejada por el cliente, en portugués.",
+    "review_comment_message": "Mensaje comentario de la reseña dejada por el cliente, en portugués.",
+    "review_creation_date": "Muestra la fecha en la que se envió la encuesta de satisfacción al cliente.",
+    "review_answer_timestamp": "Muestra la marca de tiempo de respuesta de la encuesta de satisfacción."
+  },
+  "olist_orders_dataset.csv": {
+    "order_id": "Identificador único del pedido",
+    "customer_id": "Clave para el conjunto de datos de pedidos. Cada pedido tiene un customer_id único.",
+    "order_status": "Referencia al estado del pedido (entregado, enviado, etc).",
+    "order_purchase_timestamp": "Muestra la marca de tiempo de la compra.",
+    "order_approved_at": "Muestra la marca de tiempo de aprobación del pago.",
+    "order_delivered_carrier_date": "Muestra la marca de tiempo de publicación del pedido. Cuando fue entregado al socio logístico.",
+    "order_delivered_customer_date": "Muestra la fecha real de entrega del pedido al cliente.",
+    "order_estimated_delivery_date": "Muestra la fecha de entrega estimada que fue informada al cliente en el momento de la compra."
+  },
+  "olist_products_dataset.csv": {
+    "product_id": "Identificador único de producto",
+    "product_category_name": "Categoría raíz del producto, en portugués.",
+    "product_name_lenght": "Número de caracteres extraídos del nombre del producto.",
+    "product_description_lenght": "Número de caracteres extraídos de la descripción del producto.",
+    "product_photos_qty": "Número de fotos publicadas del producto.",
+    "product_weight_g": "Peso del producto medido en gramos.",
+    "product_length_cm": "Longitud del producto medida en centímetros.",
+    "product_height_cm": "Altura del producto medida en centímetros.",
+    "product_width_cm": "Ancho del producto medido en centímetros."
+  },
+  "olist_sellers_dataset.csv": {
+    "seller_id": "Identificador único del vendedor",
+    "seller_zip_code_prefix": "Primeros 5 dígitos del código postal del vendedor.",
+    "seller_city": "Nombre de la ciudad del vendedor.",
+    "seller_state": "Estado del vendedor."
+  },
+  "product_category_name_translation.csv": {
+    "product_category_name": "Nombre de la categoría en portugués.",
+    "product_category_name_english": "Nombre de la categoría en inglés."
+  }
+}
+
